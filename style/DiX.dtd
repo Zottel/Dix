@@ -1,0 +1,15 @@
+<!ELEMENT document (information, content)>
+	<!ELEMENT information (title, language, author?, created?)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT language (#PCDATA)>
+		<!ELEMENT created (#PCDATA)>
+		<!ELEMENT author (#PCDATA)>
+	<!ELEMENT content (section* | ( paragraph | image | code)*)>
+		<!ELEMENT section (section* | ( paragraph | image | code)*)>
+			<!ATTLIST section
+  			name CDATA #REQUIRED>
+		<!ELEMENT paragraph (#PCDATA)>
+		<!ELEMENT image (file, description?)>
+			<!ELEMENT file (#PCDATA)>
+			<!ELEMENT description (#PCDATA)>
+		<!ELEMENT code (#PCDATA)>

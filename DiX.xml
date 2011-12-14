@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style/DiX.xslt"?>
+<!DOCTYPE document SYSTEM "DiX.dtd">
+<document>
+	<information>
+		<title>DiX - Document in XML</title>
+		<language>en</language>
+		<author>Julius Roob</author>
+		<created>Montag, Dezember 29 2008</created>
+	</information>
+	<content>
+		<section name="Introduction">
+			<paragraph>
+				DiX is a simple XML schema I designed to document my projects.
+			</paragraph>
+			<paragraph>
+				I did not want to use large existing systems like docbook or latex because most of them are far to complex to allow me a efficient implementation.
+				DiX is easy to implement. One small XSLT stylesheet is sufficient to turn it into a nice html page - it can easily be integrated into other projects like the Treehouse CMS I'm currently working at.
+				Another argument for limited complexity is that of a relatively flat learning curve - meaning an overall DiX knowledge can be aquired without having to invest a lot of time.
+			</paragraph>
+		</section>
+		<section name="The DiX Tree">
+			<paragraph>
+				Being XML - DiX documents are composed in a tree structure.
+			</paragraph>
+			<section name="The basic Document">
+				<paragraph>
+					The root of every DiX document is an element called "document".
+					It contains the two main components called "information" and "content" which - as you surely can guess - contain the document information like title, author and date of creation and it's content.
+					Let's have a look at the code of a "hello world" example:
+				</paragraph>
+				<code>&lt;document&gt;
+	&lt;information&gt;
+		&lt;title&gt;Hello World!&lt;/title&gt;
+		&lt;author&gt;Julius Roob&lt;/author&gt;
+		&lt;created&gt;Montag, Dezember 29 2008&lt;/created&gt;
+		&lt;language>en&lt;/language&gt;
+	&lt;/information&gt;
+	&lt;content&gt;
+		&lt;paragraph&gt;
+			Hello World!
+		&lt;/paragraph&gt;
+	&lt;/content&gt;
+&lt;/document&gt;</code>
+				<paragraph>
+					
+				</paragraph>
+			</section>
+			<section name="Sections">
+				<image>
+					<file>sections.png</file>
+					<description>Nested Sections</description>
+				</image>
+				<paragraph>
+					As soon as your document reaches a length of more than a few pages - you may want to structure it with more than paragraphs.
+					The "section" element allows you to split your Document into named sections which allow the processing applications to, for example, generate a table of contents which will certainly make it easier for the readers to get the information they need without having to read all of it.
+				</paragraph>
+				<code>&lt;content&gt;
+	&lt;section name="first chapter"&gt;
+		&lt;paragraph&gt;Hello - I'm the first section.&lt;/paragraph&gt;
+	&lt;/section&gt;
+	&lt;section name="second chapter"&gt;
+		&lt;paragraph&gt;Hello - I'm the second section.&lt;/paragraph&gt;
+	&lt;/section&gt;
+	&lt;section name="third chapter"&gt;
+		&lt;paragraph&gt;Hello - I'm the third section.&lt;/paragraph&gt;
+	&lt;/section&gt;
+&lt;/content&gt;</code>
+				<paragraph>
+					Sections can contain any element the document content can, so it's possible to split a section into a couple of sub-sections - creating a tree-like structure for your document.
+				</paragraph>
+				<code>
+					<!-- TODO: write example code -->
+				</code>
+			</section>
+		</section>
+		<section name="Design">
+			<image>
+				<file>html.png</file>
+				<description>The output of my xslt stylesheet</description>
+			</image>
+			<paragraph>
+				DiX is a system to structure your documents' content, it's not meant to allow you to design them.
+				Layout and design are supposed to be taken care of by xslt stylesheets and/or other applications.
+			</paragraph>
+		</section>
+		<section name="Appendix">
+			<section name="XML Schema">
+			</section>
+			<section name="Example XSLT Stylesheet">
+			</section>
+		</section>
+	</content>
+</document>

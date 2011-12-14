@@ -1,0 +1,124 @@
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#page
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1
+{
+	margin: 10px;
+	text-align: right;
+}
+
+a
+{
+	text-decoration: underline overline;
+}
+
+#navi
+{
+	display: none;
+}
+
+div#content
+{
+	margin: 0px;
+	padding: 10px;
+	border-top: 4px double black;
+}
+
+div#content h1,h2,h3,h4,h5
+{
+	margin: 0.9em 5px 0.3em 5px;
+	clear: both;
+}
+
+div#content p
+{
+	text-indent: 10px;
+}
+
+div#content div.image
+{
+	float: right;
+	
+	margin: 5px;
+	padding: 3px;
+	
+	border: 1px solid black;
+	
+	background: white;
+}
+
+div#content div.image img
+{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+div#content div.image p
+{
+	margin: 0px;
+	padding: 1px;
+	
+	text-indent: 0px;
+
+	font-size: 0.8em;
+}
+
+div#content code
+{
+	margin: 5px 10px;
+	padding: 3px;
+
+	display: block;
+	
+	border: 1px solid black;
+	background: lightgrey;
+}
+
+ul#footer
+{
+	margin: 0px;
+	padding: 10px;
+
+	border-top: 4px double black;
+
+	clear: both;
+}
+
+ul#footer li
+{
+	margin: 0px;
+	padding: 0px;
+
+	list-style: none;
+}
+
+ul#footer li#created
+{	
+	float: left;
+}
+
+ul#footer li#author
+{
+	float: right;
+}
+
+ul#footer li#author:before
+{
+	content: "© ";
+}
+
+.clear
+{
+	clear: both;
+}

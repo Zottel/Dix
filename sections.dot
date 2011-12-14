@@ -1,0 +1,20 @@
+digraph g
+{
+	rankdir="TB";
+	ratio="compress";
+	overlap="false";
+	node [shape="box"];
+	
+	"section1" [label="Section\nIntroduction"];
+	"section2" [label="Section\nBody"];
+	"section3" [label="Section\nAppendix"];
+	"section3.1" [label="Section\nA"];
+	"section3.2" [label="Section\nB"];
+	"Document" -> "Content";
+	"Document" -> "information\n...";
+	"Content" -> "section1";
+	"Content" -> "section2";
+	"Content" -> "section3";
+	"section3" -> "section3.1";
+	"section3" -> "section3.2";
+}

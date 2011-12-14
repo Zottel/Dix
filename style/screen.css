@@ -1,0 +1,167 @@
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+	background: black;
+}
+
+#page
+{
+	margin: 10px;
+	padding: 0px;
+	background: white;
+}
+
+h1
+{
+	margin: 10px;
+	float: right;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover
+{
+	text-decoration: underline overline;
+}
+
+#navi
+{
+	/*border: 1px dashed black;*/
+	/*width: 300px;*/
+
+	margin: 0px;
+	padding: 10px 20px;
+
+	font-size: 1.3em;
+
+	border-top: 4px double black;
+
+	clear: both;
+}
+
+#navi li
+{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+#navi ul
+{
+	margin: 0px 0px 0px 10px;
+	padding: 3px;
+	font-size: 0.9em;
+}
+
+div#content
+{
+	margin: 0px;
+	padding: 10px;
+
+	border-top: 4px double black;
+
+	clear: both;
+}
+
+div#content h1,h2,h3,h4,h5
+{
+	margin: 0.9em 5px 0.2em 5px;
+	clear: both;
+}
+
+div#content p
+{
+	text-indent: 10px;
+	
+	margin: 1px;
+
+	padding: 3px;
+
+}
+
+
+div#content div.image
+{
+	float: right;
+	
+	margin: 5px;
+	padding: 0px;
+
+	border: 1px solid black;
+	background: white;
+}
+
+div#content div.image img
+{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+div#content div.image p
+{
+	display: block;
+
+	margin: 0px;
+	padding: 3px;
+
+	text-indent: 0px;
+
+	font-size: 0.8em;
+}
+
+div#content code
+{
+	margin: 5px 10px;
+	padding: 3px;
+
+	display: block;
+	
+	border: 1px solid black;
+	background: lightgrey;
+	white-space: pre;
+}
+
+ul#footer
+{
+	margin: 0px;
+	padding: 10px;
+
+	border-top: 4px double black;
+
+	clear: both;
+}
+
+ul#footer li
+{
+	margin: 0px;
+	padding: 0px;
+
+	list-style: none;
+}
+
+ul#footer li#created
+{	
+	float: left;
+}
+
+ul#footer li#author
+{
+	float: right;
+}
+
+ul#footer li#author:before
+{
+	content: "© ";
+}
+
+.clear
+{
+	clear: both;
+}
